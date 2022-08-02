@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div style="background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); padding: 10px; border:#131f24;">
+   
+        <h1 style="font-style:oblique;"> Today's Weather</h1>
+<h2 id="change"></h2>
+        <div class="weather">
+<h2 id= "edit"></h2>
+<p style="color: gray;">Humidity: 77% Wind: 18km/h </p>
+<p style="color: gray;"> Precipitation: 20%</p>
+
+</div>
+
+<div class="float-left">
+    <span class="temperature" id="temperature">19</span
+    >
+    <span class="units">
+      <a href="#" id="celsius-link">°C</a> |
+      <a href="#" id="fahrenheit-link">°F</a>
+    </span>
+
+<div class = "second">
+   
+
+<form id="formId" style="text-align: center; background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">  
+
+    <input id="searchCity" type="text" placeholder="Enter a city..." class="text" />
+    <input type="submit" value="Search" class="submit"
+    style="margin-top:  20px;" />
+
+</form>
+</div>
+
+</div>
+
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
